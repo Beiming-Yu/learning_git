@@ -123,14 +123,11 @@ import sys
 from data_processor import process_data
 
 # Test: Input 10, Expect 20
-try:
-    if process_data(10) == 20:
-        print("✅ Test Passed")
-        sys.exit(0)
-    else:
-        print("❌ Test Failed")
-        sys.exit(1)
-except:
+if process_data(10) == 20:
+    print("✅ Test Passed")
+    sys.exit(0)
+else:
+    print("❌ Test Failed")
     sys.exit(1)
 EOF
         git add .
